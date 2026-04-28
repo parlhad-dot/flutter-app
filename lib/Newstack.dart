@@ -132,6 +132,62 @@ class Newstack extends StatelessWidget {
                           width: 50,
                         
                         ),
+                        Text("in progress"),
+
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Card(
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        Icon(Icons.sign_language),
+                        SizedBox(
+                          width: 20,
+                        ),
+                        Text("Develop API"),
+                        SizedBox(
+                          width: 65,
+                        ),
+                        Text("Backend"),
+                        SizedBox(
+                          width: 75,
+                        
+                        ),
+                        Text("in progress"),
+
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+              Card(
+                // color: ,
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        Icon(Icons.sign_language),
+                        SizedBox(
+                          width: 20,
+                        ),
+                        Text("Develop API"),
+                        SizedBox(
+                          width: 65,
+                        ),
+                        Text("Backend"),
+                        SizedBox(
+                          width: 75,
+                        
+                        ),
+                        Text("in progress"),
+
                       ],
                     ),
                   ],
