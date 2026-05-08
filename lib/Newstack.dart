@@ -15,17 +15,18 @@ class Newstack extends StatelessWidget {
                 width: 500,
                 height: 300,
                 decoration: BoxDecoration(
-                  color: Colors.lightGreen,
+                  color: Colors.lightBlueAccent,
                   borderRadius: BorderRadius.circular(18)
                 ),           
             ),
+
             Text("OverView"),
              Positioned(
-                  top: 30,
-                  left: 20,
+                  top: 70,
+                  left: 25,
                   child: Container(
-                    width: 100,
-                    height:120,
+                    width: 120,
+                    height:165,
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(16)
@@ -35,37 +36,41 @@ class Newstack extends StatelessWidget {
                         SizedBox(
                           height: 10,
                         ),
-                        Icon(Icons.calendar_month_sharp),
+                        Icon(Icons.calendar_month_sharp,
+                        color: Colors.purple,
+                        ),
                         SizedBox(
-                          height: 30,
+                          height: 40,
                         ),
                         Text("5"),
-                        Text("in Progres"),
+                        Text("in Progres",style: TextStyle(color: Colors.purple),),
                       ],
                     ),
                     
                   ),
           ),
           Positioned(
-                  top: 30,
-                  left: 150,
+                  top: 70,
+                  left: 190,
                   child: Container(
-                    width: 100,
-                    height:120 ,
+                    width: 120,
+                    height:160,
                     decoration: BoxDecoration(
-                      color: Colors.blue,
+                      color: Colors.white,
                       borderRadius: BorderRadius.circular(16)
                     ),child: Column(
                       children: [
                         SizedBox(
                           height: 10,
                         ),
-                        Icon(Icons.file_copy),
+                        Icon(Icons.file_copy,
+                        color: Colors.blue,
+                        ),
                         SizedBox(
-                          height: 30,
+                          height: 40,
                         ),
                         Text("12"),
-                        Text("Task"),
+                        Text("Task",style: TextStyle(color: Colors.blue),),
                       ],
                     ),
 
@@ -73,13 +78,13 @@ class Newstack extends StatelessWidget {
           ),
 
           Positioned(
-                  top: 30,
-                  left: 300,
+                  top: 70,
+                  left: 350,
                   child: Container(
-                    width: 100,
-                    height:120 ,
+                    width: 120,
+                    height:160 ,
                     decoration: BoxDecoration(
-                      color: Colors.grey,
+                      color: Colors.white,
                       borderRadius: BorderRadius.circular(16)
                     ),
                     child: Column(
@@ -87,12 +92,14 @@ class Newstack extends StatelessWidget {
                         SizedBox(
                           height: 10,
                         ),
-                        Icon(Icons.check),
+                        Icon(Icons.check,
+                        color: Colors.green,
+                        ),
                         SizedBox(
-                          height: 30,
+                          height: 40,
                         ),
                         Text("12"),
-                        Text("bike mode "),
+                        Text("bike mode ", style: TextStyle(color: Colors.green),),
                       ],
                     ),
                   ),
@@ -105,34 +112,48 @@ class Newstack extends StatelessWidget {
         child: Card(
           
           child: Column(
-            children: [
+            children: [ 
+              SizedBox(
+                width: 300,
+                height: 10,),
               Row(
                 children: [
                   Text("My Task"),
                   Spacer(),
-                  Text("view all"),
+                  Text("view all" , style: TextStyle(color: Colors.purpleAccent),),
                 ],
               
               ),
+              SizedBox(
+                height: 5,
+                width: 300,
+              ),
               Card(
-                child: Column(
+                child: Column(crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Row(
                       children: [
-                        Icon(Icons.file_copy),
+                        Icon(Icons.file_copy,
+                        color: Colors.purple,
+                        ),
                         SizedBox(
                           width: 20,
                         ),
-                        Text("Design mobile app"),
+                        Column(
+                          children: [
+                            Text("Design mobile app"),
+                            Text("data"),
+                          ],
+                        ),
                         SizedBox(
-                          width: 20,
+                          width: 100,
                         ),
                         Text("UI/UX Design"),
                         SizedBox(
-                          width: 50,
+                          width: 60,
                         
                         ),
-                        Text("in progress"),
+                        Text("in progress",style: TextStyle(color: Colors.purple),),
 
                       ],
                     ),
@@ -147,25 +168,30 @@ class Newstack extends StatelessWidget {
                   children: [
                     Row(
                       children: [
-                        Icon(Icons.sign_language),
+                        Icon(Icons.sign_language,
+                        color: Colors.redAccent,
+                        ),
                         SizedBox(
                           width: 20,
                         ),
                         Text("Develop API"),
                         SizedBox(
-                          width: 65,
+                          width: 140,
                         ),
                         Text("Backend"),
                         SizedBox(
-                          width: 75,
+                          width: 90,
                         
                         ),
-                        Text("in progress"),
+                        Text("in progress", style: TextStyle(color: Colors.redAccent),),
 
                       ],
                     ),
                   ],
                 ),
+              ),
+              SizedBox(
+                height: 20,
               ),
               Card(
                 // color: ,
@@ -173,20 +199,53 @@ class Newstack extends StatelessWidget {
                   children: [
                     Row(
                       children: [
-                        Icon(Icons.sign_language),
+                        Icon(Icons.check,
+                        color: Colors.green,
+                        ),
                         SizedBox(
                           width: 20,
                         ),
-                        Text("Develop API"),
+                        Text("Fix bugs"),
+                        SizedBox(
+                          width: 160,
+                        ),
+                        Text("Bug Fixes"),
+                        SizedBox(
+                          width: 90,
+                        
+                        ),
+                        Text("completed",style: TextStyle(color: Colors.green),),
+
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Card(
+                // color: ,
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        Icon(Icons.punch_clock_rounded,
+                        color: Colors.deepOrange,
+                        ),
+                        SizedBox(
+                          width: 20,
+                        ),
+                        Text("Update documentation"),
                         SizedBox(
                           width: 65,
                         ),
-                        Text("Backend"),
+                        Text("Documentation"),
                         SizedBox(
                           width: 75,
                         
                         ),
-                        Text("in progress"),
+                        Text("pending" , style: TextStyle(color: Colors.deepOrange),),
 
                       ],
                     ),

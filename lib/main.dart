@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/cardDesign.dart';
-import 'package:flutter_application_1/newstack.dart';
-import 'package:flutter_application_1/stack.dart';
+import 'package:flutter_application_1/Login1.dart';
+import 'package:flutter_application_1/creataccount.dart';
+import 'package:flutter_application_1/logindata.dart';
 // import 'package:flutter_application_1/design.dart';
 // import 'package:flutter_application_1/design2.dart';
 
@@ -22,7 +22,7 @@ class MyMainApp extends StatelessWidget {
         useMaterial3: true,
       ),
       
-      home: const Newstack(),
+      home: RegisterScreen(),
     );
   }
 }
