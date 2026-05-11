@@ -9,6 +9,7 @@ import 'package:flutter_application_1/logindata.dart';
 import 'package:flutter_application_1/newdemo.dart';
 import 'package:flutter_application_1/newsignup.dart';
 import 'package:flutter_application_1/sanuonlineshop.dart';
+import 'package:flutter_application_1/shopprofile.dart';
 // import 'package:flutter_application_1/design.dart';
 // import 'package:flutter_application_1/design2.dart';
 
@@ -29,7 +30,7 @@ class MyMainApp extends StatelessWidget {
         useMaterial3: true,
       ),
       
-      home:  register1(),
+      home:  Shopprofile(),
     );
   }
 }
