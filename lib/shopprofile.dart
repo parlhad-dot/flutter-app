@@ -10,7 +10,7 @@ class Shopprofile extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.lightBlue ,
         elevation: 0,
-        leading:  Icon(Icons.arrow_back),
+        leading:  Icon(Icons.arrow_back,color: Colors.white,),
         title: Text("Profile", style: TextStyle(
           fontSize: 30,
           fontWeight: FontWeight.bold , 
@@ -18,12 +18,12 @@ class Shopprofile extends StatelessWidget {
           
         ),
         actions: [
-          Icon(Icons.home),
-          SizedBox(width: 15,),
-          Icon(Icons.notifications_none),
-          SizedBox(width: 15),
-          Icon(Icons.menu),
-          SizedBox(width: 15),
+          Icon(Icons.home,color: Colors.white,),
+          SizedBox(width: 20,),
+          Icon(Icons.notifications_none,color: Colors.white,),
+          SizedBox(width: 20),
+          Icon(Icons.menu, color: Colors.white,),
+          SizedBox(width: 20),
         ],),
         
       body: Column(
@@ -36,7 +36,7 @@ class Shopprofile extends StatelessWidget {
             children: [
               Text("Shop Details", 
               style: TextStyle(
-                fontSize: 30,
+                fontSize: 20,
                 fontWeight: FontWeight.bold,
                 color: Colors.blue,
                 ),
@@ -50,17 +50,80 @@ class Shopprofile extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 10,),
-              Text("Shop location"),
+              Text(" PAN Number "),
               SizedBox( height: 8,),
               TextField( 
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
 
                 ),
-              )
-
+              ),
+              SizedBox( height: 10,),
+              Text("Your Mobile Number"),
+              SizedBox(height: 8,),
+              TextField(
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                ),
+              ),
             ],
-          )
+          ),
+        ),
+        Card(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text("Shop Location",
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+                color: Colors.blue,
+              ),
+              ),
+              Text("District"),
+              SizedBox(height: 8,),
+              TextField(
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                ),
+              ),
+              SizedBox( height: 10,),
+              Text("Locality"),
+              SizedBox(height: 8,),
+              TextField(
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                ),
+              ),
+              SizedBox(height: 10,),
+              Text("Locality Details"),
+              SizedBox(height: 8,),
+              TextField(
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+
+                ),
+              ),
+              SizedBox(height: 20,),
+              SizedBox(
+                 width: 200,
+                 height: 55,
+                 child: ElevatedButton(onPressed: (){},
+                 style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.blue,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(14),
+                  ),
+                 ), child: Text("Logout", 
+                 style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                 ),),
+                 ),
+                 )
+            ],
+          ),
         )
         ],   
        ) );
