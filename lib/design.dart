@@ -12,7 +12,7 @@ class _MyWidgetState extends State<DesignScreen> {
     bool _darkButton = false;
     bool _checkbox1 = false;
     bool _checkbox2 = false;
-    bool _checkbox3 = false;
+    final bool _checkbox3 = false;
 
   @override
   Widget build(BuildContext context) {

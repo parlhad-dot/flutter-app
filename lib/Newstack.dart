@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/design.dart';
 
 class Newstack extends StatelessWidget {
   const Newstack({super.key});

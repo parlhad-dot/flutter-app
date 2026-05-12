@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/Login1.dart';
 import 'package:flutter_application_1/creataccount.dart';
-import 'package:flutter_application_1/logindata.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class Homescreen extends StatelessWidget {

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/shopprofile.dart';
 
 class Sanuonlineshop extends StatelessWidget {
   const Sanuonlineshop({super.key});
@@ -136,7 +137,10 @@ class _LoginScreenState extends State<LoginScreen> {
                         width: double.infinity,
                         height: 55,
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(context, 
+                            MaterialPageRoute(builder: (context) => Shopprofile()));
+                          },
                           style: ElevatedButton.styleFrom(
                             backgroundColor: const Color(0xFF16A5D8),
                             shape: RoundedRectangleBorder(
@@ -182,7 +186,9 @@ class _LoginScreenState extends State<LoginScreen> {
                         width: 250,
                         height: 55,
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            
+                          },
                           style: ElevatedButton.styleFrom(
                             backgroundColor: const Color(0xFF16A5D8),
                             shape: RoundedRectangleBorder(

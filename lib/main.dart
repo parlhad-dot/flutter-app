@@ -1,15 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/Login1.dart';
-import 'package:flutter_application_1/creataccount.dart';
-import 'package:flutter_application_1/design.dart';
-import 'package:flutter_application_1/design2.dart';
-import 'package:flutter_application_1/first_screen.dart';
-import 'package:flutter_application_1/homescreen.dart';
-import 'package:flutter_application_1/logindata.dart';
 import 'package:flutter_application_1/newdemo.dart';
-import 'package:flutter_application_1/newsignup.dart';
-import 'package:flutter_application_1/sanuonlineshop.dart';
-import 'package:flutter_application_1/shopprofile.dart';
+import 'package:flutter_application_1/reset.dart';
+import 'package:flutter_application_1/validation.dart';
 // import 'package:flutter_application_1/design.dart';
 // import 'package:flutter_application_1/design2.dart';
 
@@ -29,8 +21,8 @@ class MyMainApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      
-      home:  Shopprofile(),
+
+      home: sanushop(),
     );
   }
 }

@@ -5,7 +5,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 // import 'package:flutter_class/Home.dart';
 
 class LoginScreen extends StatefulWidget {
-  LoginScreen({super.key});
+  const LoginScreen({super.key});
   
 
 
