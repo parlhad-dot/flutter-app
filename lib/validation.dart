@@ -11,7 +11,7 @@ class _ValidationState extends State<Validation> {
   final _formKey = GlobalKey<FormState>();
   final TextEditingController usernameController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
-   final TextEditingController phoneController = TextEditingController();
+  final TextEditingController phoneController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -29,40 +29,47 @@ class _ValidationState extends State<Validation> {
                 if (!value.contains("@")) {
                   return "Enter valid email";
                 }
-              }  ,
+                return null;
+              },
             ),
             TextFormField(
               controller: passwordController,
               obscureText: true,
-              decoration: InputDecoration( labelText: "Password"),
+              decoration: InputDecoration(labelText: "Password"),
               validator: (value) {
-                if (value==null || value.isEmpty) {
+                if (value == null || value.isEmpty) {
                   return "enter your password";
                 }
                 if (value.length < 8) {
                   return "password can not be less than 8 charector";
                 }
-              }
+                return null;
+              },
             ),
             TextFormField(
-               controller: phoneController,
-                validator: (value) {
-                if (value==null || value.isEmpty) {
+              controller: phoneController,
+              validator: (value) {
+                if (value == null || value.isEmpty) {
                   return "enter your phonenumber";
                 }
                 if (value.length < 10) {
                   return "password can not be less than 10 charector";
                 }
+                return null;
               },
               decoration: InputDecoration(labelText: "phonenumber"),
             ),
-            
-            ElevatedButton(onPressed: () {
-              if (_formKey.currentState!.validate()) {
-                ScaffoldMessenger.of(context). showSnackBar( SnackBar(content: Text("Form Sumitted succefuly")));
-              }
-            },
-             child:  Text("submit"))
+
+            ElevatedButton(
+              onPressed: () {
+                if (_formKey.currentState!.validate()) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(content: Text("Form Sumitted succefuly")),
+                  );
+                }
+              },
+              child: Text("submit"),
+            ),
           ],
         ),
       ),

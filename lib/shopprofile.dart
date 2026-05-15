@@ -31,7 +31,15 @@ class Shopprofile extends StatelessWidget {
 
         actions: [
           SizedBox(height: 20),
-          Icon(Icons.home, color: Colors.white),
+          IconButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => sanushop()),
+              );
+            },
+            icon: Icon(Icons.home, color: Colors.white),
+          ),
           SizedBox(width: 20),
           Icon(Icons.notifications_none, color: Colors.white),
           SizedBox(width: 20),

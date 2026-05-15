@@ -5,7 +5,7 @@ import 'package:flutter_application_1/shophome.dart';
 import 'package:flutter_application_1/shopprofile.dart';
 
 class sanushop extends StatefulWidget {
-  sanushop({super.key});
+  const sanushop({super.key});
 
   @override
   State<sanushop> createState() => _sanushopState();
@@ -25,6 +25,7 @@ class _sanushopState extends State<sanushop> {
             Text(" ", style: TextStyle(color: Colors.white)),
           ],
         ),
+        automaticallyImplyLeading: false,
       ),
       body: Column(
         crossAxisAlignment: .start,
@@ -121,7 +122,7 @@ class _sanushopState extends State<sanushop> {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => Reset()),
+                MaterialPageRoute(builder: (context) => Shopprofile()),
               );
             },
             child: Text(
